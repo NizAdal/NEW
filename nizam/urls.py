@@ -36,6 +36,6 @@ urlpatterns = [
     path('survey',views.survey, name='survey'),
     path('sendmail/', views.send_mail_to_all, name='sendmail'),
     path('schedulemail/', views.schedule_mail, name='schedulemail'),
-    
+    path('ckeditor/', include('ckeditor_uploader.urls')),
 
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
